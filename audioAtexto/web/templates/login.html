@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>audio A texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="static/css/login.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div id="container">
+    <a href="inicio">
+        Trascriptor
+    </a>
+
+    <a href="">
+        Iniciar sesión
+    </a>
+
+    <a href="registro">
+        Registrarse
+    </a>
+</div>
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <h1>audio A texto</h1>
+        <div class="fadeIn first">
+            <img src="static/img/logo.png" height="160" width="160"/>
+        </div>
+        <!-- Login Form -->
+        <form action="" method="post" autocomplete="on">
+            <input type="text"
+                   id="login"
+                   class="fadeIn second"
+                   name="login"
+                   placeholder="usuario"
+                   value="{{request.form.login }}">
+            <input type="text"
+                   id="correo"
+                   class="fadeIn third"
+                   name="correo"
+                   placeholder="correo"
+                   value="{{request.form.correo }}">
+            <input type="text"
+                   id="password"
+                   class="fadeIn fourth"
+                   name="password"
+                   placeholder="contraseña"
+                   value="{{request.form.password }}">
+            <input type="submit" class="fadeIn fifth" value="Entrar">
+        </form>
+        <div class="error">
+            <h5>{{error}}</h5>
+        </div>
+        <div id="formFooter">
+            <a target="_blank" href="https://sembrandotic.com/">Sembrando 2021</a>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

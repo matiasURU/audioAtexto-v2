@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <title>audio A texto</title>
+    <link href="static/css/login.css" rel="stylesheet" media="screen">
+</head>
+<body>
+<div id="container">
+    <a href="inicio">
+        Trascriptor
+    </a>
+
+    <a href="login">
+        Iniciar sesión
+    </a>
+
+    <a href="registro">
+        Registrarse
+    </a>
+</div>
+<div class="box">
+    <h2>
+        ¡Basta de audios eternos!
+    </h2>
+    <h3>
+        Pasalos a texto ahora
+    </h3>
+    <img src="static/img/transcribir.jpg" alt="audio muy largo"/>
+</div>
+<div class="boton">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+        <input type="file" name="archivo">
+        <input type="submit" value="Transcribir">
+        <p>Formato de audio admitidos: WAV, AIFF/AIFF-C y FLAC</p>
+    </form>
+
+</div>
+<div class="transcripcion">
+    <h3>{{transcripcion}}</h3>
+</div>
+<div id="Footer">
+    <a target="_blank" href="https://sembrandotic.com/">Sembrando 2021</a>
+</div>
+</body>
+
+
+</html>
